@@ -35,7 +35,7 @@
         <h3>Curitba</h3>
         <picture class="imagem2"><img src="https://alyssaprado.com/wp-content/uploads/2019/07/lugares-frios-para-viajar-no-brasil-destinos-hoteis.jpg" alt="Imagem de Curitiba"></picture>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquam voluptatem, doloribus cumque, aspernatur, esse ipsa veniam rerum at enim excepturi quaerat architecto a sunt quae optio sapiente? Perspiciatis, adipisci.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/-FssZdJ-VU8?si=D0v92QvegqnfUYfu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-FssZdJ-VU8?si=zsDhcNp7JR-Ue4ST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
 <br>
     <section>
@@ -110,11 +110,55 @@
 
                 <label>Comentário</label><br>
                 <textarea name="Comentários" id="coment" cols="30" rows="10"></textarea><br>
-                <button>Enviar</button>
+                <button type="submit">Enviar</button>
             </fieldset>    
-        </form>
+        </form><br>
+        <form action="" method="get">
+            <fieldset>
+                <legend> Qual serviço quer contratar?</legend><br>
+
+                <label>
+                    <input type="checkbox" name="servicoFoz" id="servicoFoz"> Foz do Iguaçu </label><br>
+
+                <label>
+                    <input type="checkbox" name="servicoCwb" id="servicoCwb"> Curitiba</label><br>
+
+                <label>
+                    <input type="checkbox" name="servicoRio" id="servicoRio"> Rio de Janeiro 
+                </label><br>
+
+                <button type="submit">Enviar</button><br>
+            </fieldset>
+        </form><br>
             <!-- Este é o que podemos usar para inserir local para colocar senha<label>Senha</label>
             <input type="password" name="senha" id="senha">-->
+        <fieldset method="get">
+            <legend>
+                Forma de Pagamento
+            </legend><br>
+            <label> 
+                <input type="radio" name="formaPagamento" value="cartaodeCredito"> Cartão de Crédito
+            </label><br>
+            <label> 
+                <input type="radio" name="formaPagamento" value="Boleto"> Boleto
+            </label><br>
+            <label> 
+                <input type="radio" name="formaPagamento" value="pix"> PIX
+            </label><br>
+            <button type="submit">Enviar</button><br>
+        </fieldset> <br>
+        <fieldset>
+            <legend>Escolha quantas vezes vai Pagar</legend>
+            <select name="prazoPagamento" id="prazoPagamento">
+                <option value="aVista">À Vista</option>
+                <option value="umaVez">1x</option>
+                <option value="duasVezes">2x</option>
+                <option selected value="tresVezes">3x</option>
+                <option value="quatroVezes">4x</option>
+                <option value="cincoVezes">5x</option>
+            </select>
+            <button type="submit">Enviar</button><br>
+        </fieldset>
 </section>
 </body>
 <footer>
